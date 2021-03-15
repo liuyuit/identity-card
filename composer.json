@@ -1,0 +1,21 @@
+{
+    "name": "liuyuit/identity-card",
+    "description": "parse identity card of China",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liuyu",
+            "email": "liuyuit@aliyun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "liuyuit\\IdentityCard\\": "src/"
+        }
+    }
+}
