@@ -33,10 +33,16 @@ class IdentityCard
     public function check(): bool
     {
         if ($this->isTrue === null) {
-            $this->isTrue = $this->checkAreaCode() && $this->checkBirthday() && $this->checkCode();
+            $this->isTrue = $this->checkLength() && $this->checkAreaCode() && $this->checkBirthday() && $this->checkCode();
         }
 
         return $this->isTrue;
+    }
+
+    public function checkLength(): bool
+    {
+        $length = strlen($this->id);
+        return $length == 18;
     }
 
     /**
